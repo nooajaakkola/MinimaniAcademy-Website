@@ -1,0 +1,264 @@
+/*Nooa Jaakkola*/
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #d9d9d9;
+    --surface: #f5f0eb;
+    --ttext: white;
+    --text: #2f2c2b;
+    --text2: #d97706;
+    --accent: #d97706;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text);
+    justify-content: center;
+    margin: 0;
+    padding-top: 2vw;
+    background-color: var(--background);
+    background: 
+    repeating-linear-gradient(
+      315deg,
+      var(--text),
+      white 1px,
+      transparent 2px,
+      transparent 20px
+    ),
+
+    linear-gradient(135deg, var(--background), var(--background));
+}
+
+h1 span, h4 span, p span {
+    color: var(--text2)
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+h2 {
+    text-align: left;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.9em;
+    font-weight: normal;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+span {
+    color: var(--primary);
+}
+
+#selfie-image {
+    width: 100%;
+    display: block;
+    border-radius: 1vh;
+}
+
+header {
+    box-sizing: border-box;
+    padding: 0 18vw 0 18vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 999;                                                    
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: color-mix(in srgb, var(--background) 80%, transparent);
+    backdrop-filter: blur(4px);
+    border-bottom: 0.5px solid var(--accent);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    margin: 0px 9vw 0 9vw;
+    padding: 0px 9vw 0px 9vw;
+}
+
+section {
+    height: 60vh;
+    padding: 6vw 0vw 6vw 0vw;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.header-title {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.header-nav {
+    gap: 3rem;
+    display: flex;
+}
+
+a, .header-nav h4 { 
+    text-decoration: none;
+    color: var(--text);
+    font-weight:normal;
+}
+
+#header-logo {
+    margin: 0.5rem;
+    aspect-ratio: 10/9;
+    height: clamp(50px, 6rem, 120px);
+}
+
+.welcome-container {
+    display:block;
+}
+
+#cards-section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.cards {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 1vh;
+    border: 0.1rem solid var(--text);
+    padding: 0vh;
+    background: var(--background);
+}
+
+.half-card {
+    grid-column: span 1;
+    max-width: 100%;
+}
+
+.full-card {
+    grid-column: span 2;
+    max-width: 100%;
+}
+
+.tall-card {
+    grid-column: span 1;
+    grid-row: span 2;
+    max-width: 100%;
+}
+
+.card-left {
+    grid-column-start: 1;
+}
+
+.card-right {
+    grid-column-start: 2;
+}
+
+.card h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+.card p {
+    margin: 0 1rem 1rem 1rem;
+}
+
+ol {
+    text-align: left;
+    color: var(--text2)
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* GALLERY OSIO*/
+
+.gallery-section {
+    padding: 0 10vw 0 10vw;
+    display: block;
+}
+
+#gallery-title {
+    margin: 5vw;
+    margin-top: 10vw;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1rem;
+}
+
+.gallery-grid div {
+    max-height: 15vh;
+    border: 1px solid black;
+}
+
+.gallery-grid img {
+    height: 15vh;
+    border-radius: 0.8vh;
+}
+
+@media (max-width: 1000px) {
+  .main-container {
+    margin: 0;
+    padding: 50px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .full-card {
+    grid-column: span 1;
+  }
+
+  header {
+    padding: 0 50px 0 50px;
+  }
+
+  .header-nav {
+    display:none;
+  }
+}
+
+@media (min-width: 2000px) {
+  .main-container {
+    padding: 0 11vw 0 11vw;
+    margin: 0 10vw 0 10vw;
+  }
+
+  header {
+    padding: 0 22vw 0 22vw;
+  }
+}
