@@ -17,7 +17,7 @@ body {
     color: var(--text);
     justify-content: center;
     margin: 0;
-    padding-top: 2vw;
+    padding-top: 2vh;
     background-color: var(--background);
     background: 
     repeating-linear-gradient(
@@ -153,6 +153,7 @@ a, .header-nav h4 {
     border: 0.1rem solid var(--text);
     padding: 0vh;
     background: var(--background);
+    width: auto;
 }
 
 .half-card {
@@ -199,8 +200,10 @@ li {
 /* GALLERY OSIO*/
 
 .gallery-section {
-    padding: 0 10vw 0 10vw;
+    padding: 0 10vw 5vw 10vw;
     display: block;
+    width: 75%;
+    height: auto;
 }
 
 #gallery-title {
@@ -209,20 +212,38 @@ li {
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .gallery-grid div {
-    max-height: 15vh;
-    border: 1px solid black;
+    height: auto;
+    border-top: 0.15rem solid var(--accent);
+    border-left: 0.15rem solid var(--accent);
+    border-right: 0.15rem solid var(--text);
+    border-bottom: 0.15rem solid var(--text);
 }
 
 .gallery-grid img {
     height: 15vh;
     border-radius: 0.8vh;
+    display: block;
 }
+
+.landscape-card {
+    width: 75%;
+    height: auto;
+} 
+
+.landscape-card img {
+    width: 100%;
+    height: auto;
+} 
+
+
 
 @media (max-width: 1000px) {
   .main-container {
@@ -250,6 +271,17 @@ li {
   .header-nav {
     display:none;
   }
+
+  .gallery-grid div {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-grid img {
+    height: auto;
+    border-radius: 0.8vh;
+    display: block;
+}
 }
 
 @media (min-width: 2000px) {
