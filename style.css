@@ -33,7 +33,7 @@ body {
     linear-gradient(135deg, var(--background), var(--background));
 }
 
-h1 span, h4 span, p span {
+h1 span, h2 span, h3 span, h4 span, p span {
     color: var(--text2)
 }
 
@@ -203,6 +203,7 @@ a, .header-nav h4 {
 
 .card p {
     margin: 0 1rem 1rem 1rem;
+    text-align: justify;
 }
 
 ol {
@@ -212,6 +213,25 @@ ol {
 
 li {
     margin-bottom: 0.5rem;
+}
+
+.roster-section {
+    display: block;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.player-card {
+    
+}
+
+.player-card img {
+    width: 100%;
+    height: 80%;
 }
 
 /* GALLERY OSIO*/
