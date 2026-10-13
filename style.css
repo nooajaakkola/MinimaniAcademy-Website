@@ -228,23 +228,46 @@ li {
 .player-card {
     border-top: 0.15rem solid var(--accent);
     border-left: 0.15rem solid var(--accent);
+    border-image: linear-gradient(to right, var(--text), var(--accent)) 1;
     border-right: 0.15rem solid var(--text);
     border-bottom: 0.15rem solid var(--text);
     border-radius: 1rem;
+    
+    background-color: var(--background);
+
+    height: fit-content;
 }
 
 .player-card img {
     width: 100%;
     height: 80%;
-    border-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.player-card-text {
+    display: flex;
+    justify-content: space-between;
 }
 
 .player-card p {
     margin: 0.5rem;
     display: block;
+    text-align: left;
 }
 
+
+
+
+
+
 /* GALLERY OSIO*/
+
+
+
+
+
+
 
 .gallery-section {
     padding: 0 10vw 5vw 10vw;
