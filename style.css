@@ -251,7 +251,7 @@ li {
     justify-content: space-between;
 }
 
-.player-card p {
+.player-card-text p {
     margin: 0.5rem;
     display: block;
     text-align: left;
