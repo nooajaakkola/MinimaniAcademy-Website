@@ -247,6 +247,7 @@ li {
 
 .player-card-text {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
