@@ -104,7 +104,7 @@ header {
 }
 
 .line {
-    width: 80px;
+    width: 90px;
     height: 15px;
     background-color: var(--accent);
     border-bottom: 7px solid var(--ttext);
@@ -328,9 +328,45 @@ li {
 
 
 @media (max-width: 1000px) {
+
+    body {
+        padding: 0;
+    }
+
+    .welcome-container h1 {
+        font-size: 8rem;
+    }
+
+    .welcome-container h3 {
+        font-size: 2.8rem;
+    }
+
+    #cards-section {
+        height: 300vh;
+    }
+
+    #cards-section h1 {
+        font-size: 7rem;
+    }
+
+    .card {
+        border: 0;
+        padding: 3rem;
+    }
+
+    .card h3 {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card p {
+        font-size: 3rem;
+    }
+
   .main-container {
+    height: auto;
     margin: 0;
-    padding: 50px;
+    padding: 0;
   }
 
   img {
@@ -346,12 +382,18 @@ li {
     grid-column: span 1;
   }
 
+  #home-section {
+    padding: 0;
+  }
+
   section {
     height: 80vh;
+    padding: 0;
+    width: 100%;
   }
 
   #cards-section {
-    height: 30vh;
+    height: auto;
     width: 100%;
   }
 
