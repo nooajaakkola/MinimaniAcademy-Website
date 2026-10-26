@@ -93,14 +93,24 @@ header {
     cursor: pointer;
 }
 
+.dropdown-menu {
+    display: none;
+}
 
+.dropdown-menu a {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
 
 .line {
-    width: 35px;
-    height: 5px;
-    background-color: var(--text);
+    width: 80px;
+    height: 15px;
+    background-color: var(--accent);
+    border-bottom: 7px solid var(--ttext);
+    border-right: 7px solid var(--ttext);
     border-radius: 5px;
-    margin: 6px 0;
+    margin-bottom: 10px;
 }
 
 .main-container {
@@ -292,6 +302,7 @@ li {
 
 .gallery-grid div {
     height: auto;
+    border-image: linear-gradient(to right, var(--text), var(--accent)) 1;
     border-top: 0.15rem solid var(--accent);
     border-left: 0.15rem solid var(--accent);
     border-right: 0.15rem solid var(--text);
@@ -336,7 +347,7 @@ li {
   }
 
   section {
-    height: 10vh;
+    height: 80vh;
   }
 
   #cards-section {
@@ -349,11 +360,17 @@ li {
   }
 
   header {
+    display: none;
     padding: 0 50px 0 50px;
   }
 
   .hamburger {
+    position:fixed;
+    top: 30px;
+    right: 30px;
     display: block;
+    height: auto;
+    width: auto;
   }
 
   .dropdown-menu {
@@ -363,13 +380,15 @@ li {
 .dropdown-menu.active {
     display: block;
     position: fixed;
+    width:auto;
+    height: auto;
     background-color: color-mix(in srgb, var(--background) 80%, transparent);
     border-top: 0px solid;
     border-bottom: 0.1rem solid var(--accent);
     border-left: 0.1rem solid var(--accent);
-    padding: 0 0 0 5px;
+    padding: 0 2rem 0 2rem;
     border-bottom-left-radius: 1rem;
-    top: 117px;
+    top: 0;
     right: 0;
 }
 
