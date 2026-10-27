@@ -342,7 +342,14 @@ li {
     }
 
     #cards-section {
-        height: 300vh;
+        height: auto;
+        width: 100%;
+    }
+
+    #cards-section ol {
+        font-size: 2rem;
+        text-align: center;
+        list-style-position: inside;
     }
 
     #cards-section h1 {
@@ -361,6 +368,7 @@ li {
 
     .card p {
         font-size: 3rem;
+        margin-bottom: 5rem;
     }
 
   .main-container {
@@ -392,13 +400,14 @@ li {
     width: 100%;
   }
 
-  #cards-section {
-    height: auto;
-    width: 100%;
-  }
-
   .roster-section {
     margin-top: 10vh;
+  }
+
+  .players-grid {
+    padding: 0 3rem 0 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   header {
