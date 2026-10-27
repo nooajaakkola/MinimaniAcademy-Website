@@ -410,6 +410,10 @@ li {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .players-grid {
+    font-size: 2rem;
+  }
+
   header {
     display: none;
     padding: 0 50px 0 50px;
