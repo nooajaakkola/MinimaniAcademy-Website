@@ -1,9 +1,59 @@
 {
-  "nickname": "naxuog",
-  "level": 4,
-  "elo": 1019,
-  "kd": "1.04",
-  "winRate": "50",
-  "matches": "44",
-  "updated": "2026-10-28T12:47:53.741Z"
+  "updated": "2026-10-28T13:07:32.536Z",
+  "players": [
+    {
+      "nickname": "naxuog",
+      "avatar": "https://distribution.faceit-cdn.net/images/aa827ce0-9e2d-4a12-b862-42cfb0b10ca2.jpg",
+      "level": 4,
+      "elo": 1019,
+      "kd": "1.04",
+      "winRate": "50",
+      "matches": "44"
+    },
+    {
+      "nickname": "MmAC-DOPZ",
+      "avatar": "https://distribution.faceit-cdn.net/images/14fcb5e5-5c4b-4620-abae-0d8c36c83d5c.jpg",
+      "level": 5,
+      "elo": 1061,
+      "kd": "1.04",
+      "winRate": "50",
+      "matches": "64"
+    },
+    {
+      "nickname": "MmAC-ZiwOo",
+      "avatar": "https://distribution.faceit-cdn.net/images/ae3c232b-e123-48ba-9efe-eb3a9f39bc55.jpg",
+      "level": 8,
+      "elo": 1619,
+      "kd": "1.42",
+      "winRate": "58",
+      "matches": "105"
+    },
+    {
+      "nickname": "Visvajit",
+      "avatar": "https://distribution.faceit-cdn.net/images/8becc84c-70f2-402c-b026-fb3dcda86cb7.jpg",
+      "level": 5,
+      "elo": 1076,
+      "kd": "0.95",
+      "winRate": "54",
+      "matches": "158"
+    },
+    {
+      "nickname": "coffenu",
+      "avatar": "https://distribution.faceit-cdn.net/images/c43021d8-f455-40b1-a44e-7bfe416cb367.jpg",
+      "level": 3,
+      "elo": 825,
+      "kd": "0.83",
+      "winRate": "49",
+      "matches": "43"
+    },
+    {
+      "nickname": "MmAC-Megixx",
+      "avatar": "https://distribution.faceit-cdn.net/images/fc8bb204-bd55-4067-9254-d4500a5b5273.jpeg",
+      "level": 5,
+      "elo": 1172,
+      "kd": "1.07",
+      "winRate": "55",
+      "matches": "56"
+    }
+  ]
 }
