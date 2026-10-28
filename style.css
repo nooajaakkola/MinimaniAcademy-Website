@@ -1,4 +1,6 @@
 /*Nooa Jaakkola*/
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -50,7 +52,7 @@ h2 {
 h3 {
     font-size: 1.9em;
     font-weight: normal;
-    margin: 4rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 h4 {
@@ -112,6 +114,23 @@ header {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+/*
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+
+    
+    background-color: color-mix(in srgb, var(--background) 80%, transparent);
+    backdrop-filter: blur(4px);
+
+}
+    */
 
 .main-container {
     display: flex;
@@ -207,10 +226,6 @@ a, .header-nav h4 {
     grid-column-start: 2;
 }
 
-.card h3 {
-    margin: 1rem 0 1rem 0;
-}
-
 .card p {
     margin: 0 1rem 1rem 1rem;
     text-align: justify;
@@ -225,28 +240,31 @@ li {
     margin-bottom: 0.5rem;
 }
 
+
+
+/*------------- ROSTER OSIO --------------*/
+
+
+
+
+
+
 #roster-section {
     display: block;
 }
 
+.player-type {
+    margin: 5rem 0 1rem 0;
+    font-size: 3rem;
+}
+
 
 .players-grid {
-    place-items: center;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
 
-}
-
-.players-grid h3 {
-    margin: 0;
-}
-
-.benched-players-grid {
-    place-items: center;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
 }
 
 .player-card {
@@ -259,7 +277,7 @@ li {
     
     background-color: var(--background);
 
-    height: fit-content;
+    height: 100%;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -272,7 +290,8 @@ li {
 
 .player-card img {
     width: 100%;
-    height: 80%;
+    height: auto;
+    display: block;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -286,7 +305,11 @@ li {
 .player-card-text p {
     margin: 0.5rem;
     display: block;
-    text-align: left;
+    width: min-content;
+}
+
+.player-card-name {
+    margin: 0.1rem !important;
 }
 
 
@@ -380,7 +403,11 @@ li {
 
     .card {
         border: 0;
-        padding: 3rem;
+    }
+
+    .cards {
+        
+        padding: 0 3rem 5rem 3rem;
     }
 
     .card h3 {
@@ -430,6 +457,10 @@ li {
     padding: 0 3rem 0 3rem;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benched-players-grid p {
+    font-size: 2rem;
   }
 
   .players-grid {
