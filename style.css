@@ -302,11 +302,24 @@ li {
     justify-content: space-between;
 }
 
-.player-card-text p {
-    margin: 0.5rem;
+.player-card-text p, .player-card-text ul {
+    font-weight: bold;
+    margin: 0.5rem 0 0 0.5rem;
     display: block;
-    width: min-content;
+    width: auto;
 }
+
+.player-card-text li {
+    color: var(--text);
+    text-align: right;
+    list-style-position: outside;
+    text-align: left;
+}
+
+.player-card-text li::marker {
+    color: var(--accent)
+}
+
 
 .player-card-name {
     margin: 0.1rem !important;
