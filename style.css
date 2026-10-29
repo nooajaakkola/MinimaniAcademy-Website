@@ -342,12 +342,14 @@ li {
 
 
 #faceit-section {
-
+    display: block;
 }
 
 
 .players-row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -499,8 +501,9 @@ li {
   }
 
   section {
-    height: 80vh;
-    padding: 0;
+    height: auto;
+    min-height: 0;
+    padding: 3rem 0;
     width: 100%;
   }
 
