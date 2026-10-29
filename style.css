@@ -352,8 +352,19 @@ li {
 }
 
 
-#player {
+.player-card {
+    width: auto;
+    padding: 1rem;
+}
 
+.level-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.level-row p {
+    
 }
 
 

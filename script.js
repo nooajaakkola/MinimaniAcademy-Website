@@ -46,10 +46,12 @@ fetch("stats.json")
 
       card.innerHTML = `
         <h3></h3>
-        <div class="player-card-level">
+        
+        <div class="level-row">
         <p>Level: <span class="level"></span></p>
-        <img class="level-icon" style="width: 40px">
+        <img class="level-icon" style="width: 35px; height: 35px;">
         </div>
+
         <p>ELO: <span class="elo"></span></p>
         <p>K/D: <span class="kd"></span></p>
         <p>Win rate: <span class="winrate"></span>%</p>
