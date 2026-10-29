@@ -144,7 +144,8 @@ footer {
 }
 
 section {
-    height: 60vh;
+    height: auto;
+    min-height: 60vh;
     padding: 6vw 0vw 6vw 0vw;
     margin: 0px;
     align-items: center;
@@ -327,6 +328,32 @@ li {
 
 .player-card-name {
     margin: 0.1rem !important;
+}
+
+
+
+
+
+
+/* FACEIT OSIO*/
+
+
+
+
+
+#faceit-section {
+
+}
+
+
+.players-row {
+    display: flex;
+    gap: 1rem;
+}
+
+
+#player {
+
 }
 
 
