@@ -552,7 +552,7 @@ li {
     margin-top: 10vh;
   }
 
-  .players-grid {
+  #players {
     padding: 0 3rem 0 3rem;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
