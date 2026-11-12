@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T13:55:58.892Z",
+  "updated": "2026-11-12T14:57:05.120Z",
   "players": [
     {
       "nickname": "naxuog",
@@ -13,11 +13,11 @@
     {
       "nickname": "MmAC-DOPZ",
       "avatar": "https://distribution.faceit-cdn.net/images/14fcb5e5-5c4b-4620-abae-0d8c36c83d5c.jpg",
-      "level": 5,
-      "elo": 1061,
-      "kd": "1.04",
-      "winRate": "50",
-      "matches": "64"
+      "level": 4,
+      "elo": 1007,
+      "kd": "1.03",
+      "winRate": "49",
+      "matches": "68"
     },
     {
       "nickname": "MmAC-ZiwOo",
@@ -31,11 +31,11 @@
     {
       "nickname": "Visvajit",
       "avatar": "https://distribution.faceit-cdn.net/images/8becc84c-70f2-402c-b026-fb3dcda86cb7.jpg",
-      "level": 5,
-      "elo": 1076,
-      "kd": "0.95",
-      "winRate": "54",
-      "matches": "158"
+      "level": 4,
+      "elo": 1039,
+      "kd": "0.96",
+      "winRate": "53",
+      "matches": "162"
     },
     {
       "nickname": "coffenu",
